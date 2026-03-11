@@ -7,6 +7,8 @@ import { useTheme } from "next-themes"
 
 const NAV_LINKS = [
   { href: "/", label: "Case Converter" },
+  { href: "/camelcase-converter", label: "camelCase" },
+  { href: "/snake-case-converter", label: "snake_case" },
   { href: "/slug", label: "Slug Generator" },
   { href: "/blog", label: "Blog" },
 ]

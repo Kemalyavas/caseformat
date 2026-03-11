@@ -12,6 +12,48 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `${SITE_URL}/uppercase-converter`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}/lowercase-converter`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}/title-case-converter`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}/camelcase-converter`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}/snake-case-converter`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}/kebab-case-converter`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}/pascalcase-converter`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${SITE_URL}/slug`,
       lastModified: LAST_MODIFIED,
       changeFrequency: 'monthly',
