@@ -31,10 +31,28 @@ export function ToolsGrid() {
   )
 }
 
+const MORE_TOOLS = [
+  { href: "https://imgpressr.com", title: "ImgPressr", desc: "Compress & convert images" },
+  { href: "https://jsonshift.com", title: "JSONShift", desc: "Convert JSON, CSV, YAML, XML" },
+  { href: "https://thepercentcalc.com", title: "PercentCalc", desc: "Percentage calculator" },
+  { href: "https://faviconator.com", title: "Faviconator", desc: "Favicon generator" },
+]
+
 export function SiteFooter() {
   return (
     <footer className="border-t border-border">
-      <div className="mx-auto flex w-full max-w-5xl flex-col items-center justify-between gap-4 px-4 py-6 sm:flex-row">
+      <div className="mx-auto w-full max-w-5xl px-4 py-6">
+        <div className="mb-5 pb-5 border-b border-border">
+          <p className="text-xs font-semibold text-foreground mb-2">More Free Tools</p>
+          <div className="flex flex-wrap gap-x-5 gap-y-1">
+            {MORE_TOOLS.map((t) => (
+              <a key={t.href} href={t.href} target="_blank" rel="noopener noreferrer" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+                {t.title} — {t.desc}
+              </a>
+            ))}
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
         <p className="text-xs text-muted-foreground">
           &copy; {new Date().getFullYear()} CaseFormat
         </p>
@@ -60,6 +78,7 @@ export function SiteFooter() {
           <p className="text-xs text-muted-foreground">
             100% client-side
           </p>
+        </div>
         </div>
       </div>
     </footer>
